@@ -8,7 +8,7 @@
 
 :root {
     --bg-color: hsl(210, 46%, 95%);
-    --footer-bg: hsl(217, 19%, 35%);
+    --primary: hsl(217, 19%, 35%);
     --secondary-clr-a: hsl(214, 17%, 51%);
     --secondary-clr-b: hsl(212, 23%, 69%);
 }
@@ -16,5 +16,78 @@
 body {
     background: var(--bg-color);
     font-family: 'Manrope', sans-serif;
-    font-size: 13px;
+    font-size: 0.82rem;
+    height: 100vh;
+}
+
+main {
+    margin: 0 30px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    max-height: fit-content;
+    width: 85%;
+    margin: 20% auto 0;
+    overflow: hidden;
+}
+
+.img {
+    background-image: url(images/drawers.jpg);
+    background-size: cover;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+.content h3 {
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.content p {
+    color: var(--secondary-clr-a);
+    line-height: 1.5;
+    padding: 23px 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    padding: 20px 30px;
+}
+
+footer p {
+    color: var(--secondary-clr-b);
+    font-weight: 500;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    list-style: none;
+}
+
+footer .btn {
+    background-color: var(--secondary-clr-b);
+    border-radius: 50%;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+@media (min-width: 1000px) {
+    .container {
+        display: flex;
+    }
+
+    .img {
+        
+    }
 }
